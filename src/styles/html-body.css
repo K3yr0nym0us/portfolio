@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+hr {
+    margin: 35px auto;
+}

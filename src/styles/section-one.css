@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text__container {
+    margin: 20px auto;
+    text-align: left;
+
+}
+
+.hello {
+    font-size: 40px;
+    margin: 5px auto;
+}
+
+.name {
+    font-size: 50px;
+    margin: 5px auto;
+    text-shadow: 0.1em 0.1em 0.1em rgb(173, 173, 173);
+}
+
+.dev {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin: 15px 0;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2.5s steps(22) 1s 1 normal both;
+}
+
+.img__dev {
+    margin: auto;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+
+.btn__cv {
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 1px 3px 10px #000000;
+    color: dimgrey;
+    margin: 25px auto;
+}
+
+.btn__cv:hover {
+    cursor: pointer;
+    color: #000000;
+}
+
+.btn__cv:active {
+    box-shadow: none;
+}
+
+img {
+    width: 500px;
+}
+
+.img__react {
+    width: 60px;
+    margin: auto 0;
+    animation: giro 2s infinite alternate-reverse;
+}
+
+@keyframes giro{
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}

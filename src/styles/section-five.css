@@ -1,0 +1,31 @@
+.imgs__contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 33.33%;
+    margin: 0 auto 25px auto;
+}
+
+.img__github, .img__linkedin, .img__gmail {
+    width: 70px;
+}
+
+.img__github:hover, .img__linkedin:hover, .img__gmail:hover {
+    /*
+    animation-duration: 0.5s;
+    animation-name: bailar;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    */
+    animation: 0.5s infinite alternate bailar;
+}
+
+@keyframes bailar {
+    from {
+        transform: rotate(10deg);
+    }
+
+    to {
+        transform: rotate(-10deg);
+    }
+}
