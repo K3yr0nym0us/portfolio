@@ -41,6 +41,12 @@ nav a{
     border-bottom: 4px solid black;
 }
 
+@media (width: 1920px) {
+    nav a {
+        font-size: 28px;
+    }
+}
+
 @media (max-width: 600px) {
 
     .menu-fixed {
@@ -58,5 +64,6 @@ nav a{
         flex-direction: column;
         border-bottom: none;
         padding: 0;
+        font-weight: bold;
     }
 }
