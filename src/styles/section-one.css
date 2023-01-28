@@ -86,3 +86,45 @@ img {
         rotate: 360deg;
     }
 }
+
+@media (width: 1920px) {
+    .hello {
+        font-size: 50px;
+        margin: 25px auto;
+    }
+    
+    .name {
+        font-size: 65px;
+        margin: 25px auto;
+    }
+
+    .dev {
+        font-size: 35px;
+        margin: 25px 0;
+    }
+
+    .btn__cv {
+        width: 200px;
+        height: 70px;
+        border-radius: 50px;
+        font-size: 20px;
+    }
+
+    img {
+        width: 600px;
+    }
+
+    .img__react {
+        width: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    img {
+        display: none;
+    }
+
+    .img__react {
+        display: block;
+    }
+}

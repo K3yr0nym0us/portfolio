@@ -29,3 +29,21 @@
         transform: rotate(-10deg);
     }
 }
+
+@media (width: 1920px) {
+
+    .imgs__contact {
+        justify-content: space-between;
+    }
+
+    .img__github, .img__linkedin, .img__gmail {
+        width: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .img__github, .img__linkedin, .img__gmail {
+        display: block;
+        margin: 25px;
+    }
+}

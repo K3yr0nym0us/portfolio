@@ -11,3 +11,31 @@
     width: 100px;
     margin: 25px;
 }
+
+@media (width: 1920px) {
+
+    .img__portfolio {
+        width: 180px;
+        margin: 25px;
+        margin-top: 45px;
+    }
+
+    .img__admin {
+        width: 180px;
+        margin: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .img__portfolio {
+        width: 160px;
+        display: block;
+        margin: 25px auto;
+    }
+
+    .img__admin {
+        width: 140px;
+        display: block;
+        margin: 25px auto;
+    }
+}
