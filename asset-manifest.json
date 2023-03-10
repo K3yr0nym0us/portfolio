@@ -1,34 +1,36 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.94b63602.css",
-    "main.js": "/portfolio/static/js/main.2badc41f.js",
+    "main.css": "/portfolio/static/css/main.107844e7.css",
+    "main.js": "/portfolio/static/js/main.ded23c63.js",
     "static/media/Curriculum Dev.pdf": "/portfolio/static/media/Curriculum Dev.94a368df649c97f0c04e.pdf",
-    "static/media/MySQL.webp": "/portfolio/static/media/MySQL.a4370e6d1c1ef37606b8.webp",
     "static/media/vscode.png": "/portfolio/static/media/vscode.e66400756ccbdbfc0b31.png",
     "static/media/NodeJS.png": "/portfolio/static/media/NodeJS.fc3bd1ec69d7a50e685a.png",
     "static/media/Logo.webp": "/portfolio/static/media/Logo.ef4c0ef9ea2e44205b4a.webp",
-    "static/media/portafolio.png": "/portfolio/static/media/portafolio.2427b7c885de1ed1edd0.png",
+    "static/media/Electron.png": "/portfolio/static/media/Electron.9f6930068ccc4042369e.png",
+    "static/media/Python.png": "/portfolio/static/media/Python.f9dc70303b81180b774d.png",
     "static/media/caricatura.webp": "/portfolio/static/media/caricatura.ea5be2795877cdd457ba.webp",
     "static/media/aluraoracle.webp": "/portfolio/static/media/aluraoracle.321dc5914d7b199fe38a.webp",
     "static/media/github.webp": "/portfolio/static/media/github.0df5b6f1b49491e63316.webp",
+    "static/media/nodejs-mysql.webp": "/portfolio/static/media/nodejs-mysql.eb35ce6b09344be0607b.webp",
     "static/media/html-css-js-logo.webp": "/portfolio/static/media/html-css-js-logo.8435c1d72f9b6ebf0f4d.webp",
     "static/media/herramientas.webp": "/portfolio/static/media/herramientas.e26156d882c065965281.webp",
-    "static/media/nodejs-mysql.webp": "/portfolio/static/media/nodejs-mysql.c707ddcb9369dc7a32f8.webp",
     "static/media/github-codes.webp": "/portfolio/static/media/github-codes.0197abf492c5bc71a35c.webp",
+    "static/media/portafolio.webp": "/portfolio/static/media/portafolio.fe625df6b3f3c72614c8.webp",
     "static/media/git+github.webp": "/portfolio/static/media/git+github.c23cba81bfebc7968bc1.webp",
     "static/media/One.webp": "/portfolio/static/media/One.93bd7a999fdd9d2060cd.webp",
     "static/media/css.png": "/portfolio/static/media/css.6b567a6c5d99fb6ee070.png",
     "static/media/html.png": "/portfolio/static/media/html.ff3cf75e3b7cbb4ea77c.png",
     "static/media/gmail.png": "/portfolio/static/media/gmail.d765005ce9d4caa3d69e.png",
+    "static/media/SQL.png": "/portfolio/static/media/SQL.69c8e8f723e0effce00d.png",
     "static/media/ciisa.webp": "/portfolio/static/media/ciisa.6a6b5a2a20b5dfb01a5f.webp",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/linkedin.webp": "/portfolio/static/media/linkedin.189d71e5984b1d445b9d.webp",
     "index.html": "/portfolio/index.html",
-    "main.94b63602.css.map": "/portfolio/static/css/main.94b63602.css.map",
-    "main.2badc41f.js.map": "/portfolio/static/js/main.2badc41f.js.map"
+    "main.107844e7.css.map": "/portfolio/static/css/main.107844e7.css.map",
+    "main.ded23c63.js.map": "/portfolio/static/js/main.ded23c63.js.map"
   },
   "entrypoints": [
-    "static/css/main.94b63602.css",
-    "static/js/main.2badc41f.js"
+    "static/css/main.107844e7.css",
+    "static/js/main.ded23c63.js"
   ]
 }
