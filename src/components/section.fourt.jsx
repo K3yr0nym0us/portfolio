@@ -1,5 +1,5 @@
 import '../styles/section-fourt.css'
-import portfolio from '../assets/img/portafolio.png'
+import portfolio from '../assets/img/portafolio.webp'
 import minventario from '../assets/img/Logo.webp'
 import gitHubCodes from '../assets/img/github-codes.webp'
 

@@ -42,4 +42,15 @@
 
 .github {
     width: 150px;
+    margin: 25px auto 10px auto;
+}
+
+.img__sql {
+    width: 100px;
+    margin: 25px auto 10px auto;
+}
+
+.img__python {
+    width: 100px;
+    margin: 25px auto 10px auto;
 }

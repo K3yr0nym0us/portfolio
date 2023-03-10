@@ -5,10 +5,12 @@ import imgHtml from '../assets/img/html.png'
 import imgCss from '../assets/img/css.png'
 import imgJs from '../assets/img/javascript.png'
 import imgNode from '../assets/img/NodeJS.png'
-import imgMySql from '../assets/img/MySQL.webp'
+import imgMySql from '../assets/img/SQL.png'
 import imgVsCode from '../assets/img/vscode.png'
 import imgGitGitHub from '../assets/img/git+github.webp'
 import imgTerminal from '../assets/img/terminal-icono.png'
+import imgPython from '../assets/img/Python.png'
+import imgElectron from '../assets/img/Electron.png'
 
 export const ModalSkills = ({state, change, modalType}) => {
     if(modalType === 'front') {
@@ -38,7 +40,13 @@ export const ModalSkills = ({state, change, modalType}) => {
                 Manipulacion del DOM con JavasScript,<br />
                 CRUD con JavasScript asíncrono,<br />
                 almacenamiento de datos en el navegador,<br />
-                y validacion de formularios.
+                arrow functions, validacion de formularios, etc.<br />
+            </p>
+            <h2 className="h2__skills">Electron JS</h2>
+            <img className="img__skills" src={imgElectron} alt="JavasScript" />
+            <p className="p__skills">
+                Desarrollo de apliciones de escritorio<br />
+                multi-sistemas, Windows, Mac y Linux.<br />
             </p>
             <button className="btn__cv" onClick={change}>Cerrar</button>
         </Modal>
@@ -53,13 +61,19 @@ export const ModalSkills = ({state, change, modalType}) => {
                 MySQL, jwt, cors, dotenv,<br />
                 morgan, entre otros.
             </p>
-            <img className="img__skills img__back" src={imgMySql} alt="MySQL" />
-            <p className="p__skills">Entre mis conocimientos en MySQL se encuentran:</p>
+            <img className="img__skills img__sql" src={imgMySql} alt="SQL" />
+            <p className="p__skills">Entre mis conocimientos en SQL se encuentran:</p>
             <p className="p__skills">
                 Creacion y configuracion de bases de datos,<br />
                 Creacion de consultas basicas,<br />
                 Uso de comandos INSERT, REPLACE, UPDATE, DELETE,<br />
-                indices y restricciones, entre otros.
+                indices, entre otros.
+            </p>
+            <img className="img__skills img__python" src={imgPython} alt="Python" />
+            <p className="p__skills">Conocimientos en lenguaje Python:</p>
+            <p className="p__skills">
+                Uso de librerias como Tkinter,<br />
+                CustomTkinter, entre otros.
             </p>
             <button className="btn__cv" onClick={change}>Cerrar</button>
         </Modal>
@@ -75,7 +89,6 @@ export const ModalSkills = ({state, change, modalType}) => {
                 Edicion rapida,<br />
                 Atajos, entre otros.
             </p>
-            <h2 className="h2__skills">Git & GitHub</h2>
             <img className="img__skills github" src={imgGitGitHub} alt="GitHub" />
             <p className="p__skills">Mis habilidades en control de versiones son:</p>
             <p className="p__skills">

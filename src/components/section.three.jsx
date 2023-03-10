@@ -6,19 +6,14 @@ import '../styles/section-three.css'
 export const SectionThree = () => {
 
     window.addEventListener('scroll', () => {
-        /*if (window.innerWidth >= 600) {*/
-            const element = document.querySelector('[data-formacion]');
-            const position = element.getBoundingClientRect();
-            if (position.top <= 500 && position.top >= -50) {
-                element.classList.replace('imgs__formacion--hidden', 'imgs__formacion');
-            } else {
-                element.classList.remove('imgs__formacion');
-                element.classList.add('imgs__formacion--hidden');
-            };
-        /*} else {
-            const element = document.querySelector('[data-formacion]');
+        const element = document.querySelector('[data-formacion]');
+        const position = element.getBoundingClientRect();
+        if (position.top <= 500 && position.top >= -50) {
             element.classList.replace('imgs__formacion--hidden', 'imgs__formacion');
-        };*/
+        } else {
+            element.classList.remove('imgs__formacion');
+            element.classList.add('imgs__formacion--hidden');
+        };
     });
 
     return <section className="section__three">
