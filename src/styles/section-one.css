@@ -1,15 +1,3 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.text__container {
-    margin: 20px auto;
-    text-align: left;
-
-}
 
 .hello {
     font-size: 40px;
@@ -17,24 +5,13 @@
 }
 
 .name {
-    font-size: 50px;
-    margin: 5px auto;
     text-shadow: 0.1em 0.1em 0.1em rgb(173, 173, 173);
 }
 
 .dev {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    margin: 15px 0;
-    width: 0;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 2.5s steps(22) 1s 1 normal both;
-}
-
-.img__dev {
-    margin: auto;
 }
 
 @keyframes typing {
@@ -47,34 +24,22 @@
 }
 
 .btn__cv {
-    background-color: white;
-    border: none;
-    border-radius: 30px;
-    width: 150px;
-    height: 50px;
-    font-size: 15px;
-    font-weight: bold;
     box-shadow: 1px 3px 10px #000000;
-    color: dimgrey;
-    margin: 25px auto;
+    width: 12vw;
+    height: 8vh;
 }
 
 .btn__cv:hover {
     cursor: pointer;
-    color: #000000;
+    color: #000000 !important;
 }
 
 .btn__cv:active {
     box-shadow: none;
 }
 
-img {
-    width: 500px;
-}
-
 .img__react {
     width: 60px;
-    margin: auto 0;
     animation: giro 2s infinite alternate-reverse;
 }
 
@@ -84,47 +49,5 @@ img {
     }
     to {
         rotate: 360deg;
-    }
-}
-
-@media (width: 1920px) {
-    .hello {
-        font-size: 50px;
-        margin: 25px auto;
-    }
-    
-    .name {
-        font-size: 65px;
-        margin: 25px auto;
-    }
-
-    .dev {
-        font-size: 35px;
-        margin: 25px 0;
-    }
-
-    .btn__cv {
-        width: 200px;
-        height: 70px;
-        border-radius: 50px;
-        font-size: 20px;
-    }
-
-    img {
-        width: 600px;
-    }
-
-    .img__react {
-        width: 100px;
-    }
-}
-
-@media (max-width: 600px) {
-    img {
-        display: none;
-    }
-
-    .img__react {
-        display: block;
     }
 }

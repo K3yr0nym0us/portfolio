@@ -1,21 +1,17 @@
-.imgs__contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 33.33%;
-    margin: 0 auto 25px auto;
+h5 {
+    text-shadow: 0.1em 0.1em 0.1em rgb(173, 173, 173);
 }
 
-.img__github, .img__linkedin, .img__gmail {
-    width: 70px;
+.img__contact {
+    width: 5vw;
 }
 
-.img__github:hover, .img__linkedin:hover, .img__gmail:hover {
+.img__contact:hover {
     /*
-    animation-duration: 0.5s;
-    animation-name: bailar;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+        animation-duration: 0.5s;
+        animation-name: bailar;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     */
     animation: 0.5s infinite alternate bailar;
 }
@@ -27,23 +23,5 @@
 
     to {
         transform: rotate(-10deg);
-    }
-}
-
-@media (width: 1920px) {
-
-    .imgs__contact {
-        justify-content: space-between;
-    }
-
-    .img__github, .img__linkedin, .img__gmail {
-        width: 100px;
-    }
-}
-
-@media (max-width: 600px) {
-    .img__github, .img__linkedin, .img__gmail {
-        display: block;
-        margin: 25px;
     }
 }

@@ -1,49 +1,13 @@
-.section__three {
-    text-align: center;
+h3 {
+    text-shadow: 0.1em 0.1em 0.1em rgb(173, 173, 173);
 }
 
 .imgs__formacion--hidden {
     transition: opacity linear 1s;
     opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .imgs__formacion {
     transition: opacity linear 1s;
     opacity: 1;
-}
-
-.imgs__formacion {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 auto;
-}
-
-.img__ciisa {
-    width: 250px;
-}
-
-.img__one {
-    width: 400px;
-}
-
-.img__alura {
-    width: 350px;
-}
-
-@media (width: 1920px) {
-    .img__ciisa {
-        width: 400px;
-    }
-    
-    .img__one {
-        width: 550px;
-    }
-    
-    .img__alura {
-        width: 450px;
-    }
 }

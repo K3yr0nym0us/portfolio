@@ -1,45 +1,48 @@
-import { useEffect } from 'react';
-import '../styles/menu-fixed.css'
+import '../styles/menu-fixed.css';
 
-export const Menu = () => {
+export const Menu = ({ claseMenu }) => {
 
-    useEffect(() => {
-        document.title = 'Portfolio';
-        window.addEventListener('scroll', () => {
-            const menus = document.querySelectorAll('li');
-            const hrs = document.querySelectorAll('hr');
-
-            hrs.forEach( (hr) => {
-                const position = hr.getBoundingClientRect().top;
-                if (position <= 150 && position >= -50) {
-                    const id = hr.id;
-                    
-                    menus.forEach( (menu) => {
-                        const capturaMenu = menu.childNodes[0];
-                        const containMenu = capturaMenu.innerHTML.toLowerCase();
-
-                        capturaMenu.removeAttribute('id');
-                        if (id === containMenu) {
-                            menu.childNodes[0].setAttribute("id", "active");
-                        };
-                    });
-                };
-            });
-        });
-        
-    }, []);
-
-    return <header>
-        <div className="menu-fixed">
-            <nav>
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#habilidades">HABILIDADES</a></li>
-                    <li><a href="#formacion">FORMACION</a></li>
-                    <li><a href="#proyectos">PROYECTOS</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    return (
+        <header>
+            <div className="menu-fixed pt-2 pb-2 text-center bg-white fs-4">
+                <nav>
+                    <ul className='row w-50 m-auto'>
+                        <li className='col'>
+                            <a 
+                                className='text-decoration-none text-black' href="#home"
+                                id={ claseMenu === 'one' ? 'active' : '' }
+                            >HOME</a>
+                        </li>
+                        <li className='col'>
+                            <a 
+                                className='text-decoration-none text-black' 
+                                href="#habilidades"
+                                id={ claseMenu === 'two' ? 'active' : '' }
+                            >HABILIDADES</a>
+                        </li>
+                        <li className='col'>
+                            <a 
+                                className='text-decoration-none text-black' 
+                                href="#formacion"
+                                id={ claseMenu === 'three' ? 'active' : '' }
+                            >FORMACIÓN</a>
+                        </li>
+                        <li className='col'>
+                            <a 
+                                className='text-decoration-none text-black' href="#proyectos"
+                                id={ claseMenu === 'fourt' ? 'active' : '' }
+                            >PROYECTOS</a>
+                        </li>
+                        <li className='col'>
+                            <a 
+                                className='text-decoration-none text-black' 
+                                href="#contacto"
+                                id={ claseMenu === 'five' ? 'active' : '' }
+                            >CONTACTO</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    )
 };
