@@ -31,7 +31,7 @@ export const SectionOne = ({ setClaseMenu }) => {
                     </a>
                 </div>
                 <div className="col-4">
-                    <img src={ caricatura } alt="Web Developer" />
+                    <img className='w-100 mt-5' src={ caricatura } alt="Web Developer" />
                 </div>
             </div>
         </section>
