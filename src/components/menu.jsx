@@ -9,7 +9,7 @@ export const Menu = ({ claseMenu }) => {
                     <ul className='row w-50 m-auto'>
                         <li className='col'>
                             <a 
-                                className='text-decoration-none text-black' href="#home"
+                                className='text-decoration-none text-black' href="#one"
                                 id={ claseMenu === 'one' ? 'active' : '' }
                             >HOME</a>
                         </li>

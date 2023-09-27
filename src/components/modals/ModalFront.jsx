@@ -1,0 +1,40 @@
+import imgHtml from '../../assets/img/html-css-js-logo.webp';
+import imgReact from '../../assets/img/logoReact.svg';
+import imgElectron from '../../assets/img/Electron.png';
+
+export const ModalFront = ({ change }) => {
+
+    return (
+        <div className='modal__window text-center'>
+            <h1 className="h1__skills fs-1 mt-4">Front-End</h1>
+            <p className="fs-5 mt-3">Mis habilidades como desarrollador Front-End se especializan en:</p>
+            <img className="w-25 m-auto" src={ imgHtml } alt="HTML" />
+            <p className="fs-5">
+                Cuento con conocimiento profundo de HTML, CSS y JavaScript.<br />
+                Puedo analizar y procesar el código HTML<br />
+                Soy capaz de interpretar las reglas de estilo definidas en CSS<br />
+                Entiendo la lógica y la interacción en tiempo real en una<br /> 
+                página web, eventos, animaciones y manipulación del DOM (Document Object Model).
+            </p>
+            <img className="w-25" src={ imgReact } alt="JavasScript" />
+            <h2 className="fs-3">React</h2>
+            <p className="fs-5">
+                Conocimientos en React, incluyendo la comprensión de componentes,<br />
+                estados, props, ciclos de vida, el uso de hooks y otros conceptos<br />
+                básicos y fundamentales para el desarrollo de aplicaciones web.
+            </p>
+            <img className="img__skills mt-4" src={ imgElectron } alt="JavasScript" />
+            <h2 className="fs-3">Electron JS</h2>
+            <p className="fs-5">
+                Conocimiento en Electron.js, un framework que permite crear<br />
+                aplicaciones de escritorio multiplataforma utilizando tecnologías web.<br /> 
+                Su capacidad para interactuar con el sistema operativo, acceso<br /> 
+                a archivos y ventanas de aplicación.
+            </p>
+            <button 
+                className="btn__cv fs-4 fw-bold rounded-5 m-auto mt-3 mb-4"
+                onClick={ change }
+            >Cerrar</button>
+        </div>
+    )
+}

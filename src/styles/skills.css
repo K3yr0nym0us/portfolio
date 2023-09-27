@@ -1,56 +1,12 @@
-.container__skills {
-    background-color: whitesmoke;
+.modal__window {
     font-family: "Rubik", sans-serif;
-    background-color: white;
-    border-radius: 25px;
-    padding: 25px;
-    text-align: center;
     box-shadow: 1px 3px 10px #000000;
-}
-
-.modal-content {
-    border: none;
-}
-
-.img__skills {
-    width: 50px;
-    margin: 0 auto;
 }
 
 .h1__skills {
     text-shadow: 0.1em 0.1em 0.1em rgb(173, 173, 173);
-    font-size: 32px;
-    font-weight: 500;
-    margin: 5px;
 }
 
-.p__skills {
-    margin: 10px;
-    font-size: 18px;
-}
-
-.h2__skills {
-    font-size: 22px;
-    font-weight: 500;
-    margin: 25px auto 5px auto;
-}
-
-.img__back {
-    width: 150px;
-    margin: 25px auto 10px auto;
-}
-
-.github {
-    width: 150px;
-    margin: 25px auto 10px auto;
-}
-
-.img__sql {
-    width: 100px;
-    margin: 25px auto 10px auto;
-}
-
-.img__python {
-    width: 100px;
-    margin: 25px auto 10px auto;
+.img__skills {
+    width: 8vw;
 }

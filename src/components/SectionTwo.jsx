@@ -1,7 +1,8 @@
 import '../styles/section-two.css';
-import htmlCssJsLogo from '../assets/img/html-css-js-logo.webp';
-import nodeMysql from '../assets/img/nodejs-mysql.webp';
+import logoFront from '../assets/img/front.png';
+import nodeExpresSql from '../assets/img/nodeExpressSql.png';
 import herramientas from '../assets/img/herramientas.webp';
+import logoOtros from '../assets/img/LogoOtros.svg';
 import { ModalSkills } from './modalSkills';
 import { useEffect, useRef, useState } from "react";
 
@@ -34,8 +35,8 @@ export const SectionTwo = ({ setClaseMenu }) => {
                         setModalType('front');
                     }}
                 >
-                    <img className="img__square" src={ htmlCssJsLogo } alt="HTML CSS JavasScript" />
-                    <p className="fw-bold mt-4 fs-3">Front-End</p>
+                    <img className="img__square" src={ logoFront } alt="HTML CSS JavasScript" />
+                    <p className="fw-bold mt-2 fs-3">Front-End</p>
                 </button>
                 <button 
                     className={ classBoxWhite }
@@ -44,8 +45,8 @@ export const SectionTwo = ({ setClaseMenu }) => {
                         setModalType('back');
                     }}
                 >
-                    <img className="img__square" src={nodeMysql} alt="NodeJS MySql" />
-                    <p className="fw-bold mt-4 fs-3">Back-End</p>
+                    <img className="img__square" src={ nodeExpresSql } alt="NodeJS MySql" />
+                    <p className="fw-bold mt-2 fs-3">Back-End</p>
                 </button>
                 <button 
                     className={ classBoxWhite }
@@ -54,8 +55,18 @@ export const SectionTwo = ({ setClaseMenu }) => {
                         setModalType('herramientas');
                     }}
                 >
-                    <img className="img__square" src={herramientas} alt="Git Github Consola VSCode" />
-                    <p className="fw-bold mt-4 fs-3">Herramientas</p>
+                    <img className="img__square" src={ herramientas } alt="Git Github Consola VSCode" />
+                    <p className="fw-bold mt-2 fs-3">Herramientas</p>
+                </button>
+                <button 
+                    className={ classBoxWhite }
+                    onClick={() => {
+                        setState(true);
+                        setModalType('otros');
+                    }}
+                >
+                    <img className="img__square" src={ logoOtros } alt="Otros" />
+                    <p className="fw-bold mt-2 fs-3">Otros</p>
                 </button>
                 <ModalSkills 
                     state={ state } 

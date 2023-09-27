@@ -4,6 +4,7 @@ import linkedin from '../assets/img/linkedin.webp';
 import gmail from '../assets/img/gmail.png';
 import whatsapp from '../assets/img/WhatsApp_icon.webp';
 import { useEffect, useRef } from 'react';
+import Swal from 'sweetalert2';
 
 export const SectionFive = ({ setClaseMenu }) => {
 
@@ -16,6 +17,16 @@ export const SectionFive = ({ setClaseMenu }) => {
             }
         })
     })
+
+    const handleClick = () => {
+        navigator.clipboard.writeText('kevinmartinezbarra@gmail.com');
+        Swal.fire({
+            icon: 'success',
+            title: 'Copiado al portapapeles',
+            showConfirmButton: false,
+            timer: 1000,
+        })
+    }
 
     return (
         <section className="pt-4 pb-4 text-center" id='five' ref={ refSection }>
@@ -30,8 +41,8 @@ export const SectionFive = ({ setClaseMenu }) => {
                     <img className='img__contact' src={ linkedin } alt="linkedin" />
                     <p className='fs-4 fw-bold mt-2'>LinkedIn</p>
                 </a>
-                <a className='text-decoration-none text-dark' href="mailto:kevinmartinezbarra@gmail.com" rel="noreferrer">
-                    <img className='img__contact' src={ gmail } alt="gmail" />
+                <a className='text-decoration-none text-dark'>
+                    <img className='img__contact' src={ gmail } onClick={ handleClick } alt="gmail" />
                     <p className='fs-4 fw-bold mt-2'>Gmail</p>
                 </a>
                 <a className='text-decoration-none text-dark' href="https://api.whatsapp.com/send?phone=56958407177" target='_blank' rel="noreferrer">
