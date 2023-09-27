@@ -30,7 +30,7 @@ export const SectionOne = ({ setClaseMenu }) => {
                         <button className="btn__cv rounded-5 border text-secondary fs-5 mt-4 fw-bold bg-white">Descargar CV</button>
                     </a>
                 </div>
-                <div className="col-4">
+                <div className="col-5">
                     <img className='w-100 mt-5' src={ caricatura } alt="Web Developer" />
                 </div>
             </div>
