@@ -41,10 +41,10 @@ export const SectionFive = ({ setClaseMenu }) => {
                     <img className='img__contact' src={ linkedin } alt="linkedin" />
                     <p className='fs-4 fw-bold mt-2'>LinkedIn</p>
                 </a>
-                <p className='text-decoration-none text-dark bg-white'>
+                <div className='text-decoration-none text-dark bg-white'>
                     <img className='img__contact' src={ gmail } onClick={ handleClick } alt="gmail" />
                     <p className='fs-4 fw-bold mt-2'>Gmail</p>
-                </p>
+                </div>
                 <a className='text-decoration-none text-dark' href="https://api.whatsapp.com/send?phone=56958407177" target='_blank' rel="noreferrer">
                     <img className='img__contact' src={ whatsapp } alt="whatsapp" />
                     <p className='fs-4 fw-bold mt-2'>WhatsApp</p>
