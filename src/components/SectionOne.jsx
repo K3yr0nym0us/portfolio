@@ -19,7 +19,7 @@ export const SectionOne = ({ setClaseMenu }) => {
     return (
         <section className='section__one pt-5 pb-4' id='one' ref={ refSection }>
             <div className='d-flex justify-content-center mt-2'>
-                <div className="col-4 mt-5 pt-5">
+                <div className="col-5 mt-5 pt-5 ps-5 ms-5">
                     <h1 className="hello fs-1 fw-bold mt-5">Hola!</h1>
                     <p className="name fs-2">Mi nombre es Kevin Martinez.</p>
                     <small className="dev d-flex fs-4">
