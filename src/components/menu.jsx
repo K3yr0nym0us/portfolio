@@ -4,7 +4,7 @@ export const Menu = ({ claseMenu }) => {
 
     return (
         <header>
-            <div className="menu-fixed pt-2 pb-2 text-center bg-white fs-3">
+            <div className="menu-fixed pt-2 pb-2 text-center bg-white fs-4">
                 <nav className='w-75 m-auto'>
                     <ul className='row w-75 m-auto'>
                         <li className='col'>
