@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, SectionOne, SectionTwo, SectionThree, SectionFourt, SectionFive } from "./";
 
 export const App = () => {
+    
+    useEffect(() => {
+        document.title = 'Portafolio - Kevin Martinez';
+    });
 
     const [ claseMenu, setClaseMenu ] = useState('one');
 
