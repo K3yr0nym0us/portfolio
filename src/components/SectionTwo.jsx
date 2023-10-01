@@ -18,8 +18,11 @@ export const SectionTwo = ({ setClaseMenu }) => {
         })
     })
 
-    const [ state, setState ] = useState(false);
     const [ modalType, setModalType ] = useState('');
+    const [show, setShow] = useState(false);
+    
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     const classBoxWhite = 'square__white border rounded-4 pt-4 ps-5 pe-5';
 
@@ -31,7 +34,7 @@ export const SectionTwo = ({ setClaseMenu }) => {
                 <button 
                     className={ classBoxWhite }
                     onClick={() => {
-                        setState(true);
+                        handleShow();
                         setModalType('front');
                     }}
                 >
@@ -41,7 +44,7 @@ export const SectionTwo = ({ setClaseMenu }) => {
                 <button 
                     className={ classBoxWhite }
                     onClick={() => {
-                        setState(true);
+                        handleShow();
                         setModalType('back');
                     }}
                 >
@@ -51,7 +54,7 @@ export const SectionTwo = ({ setClaseMenu }) => {
                 <button 
                     className={ classBoxWhite }
                     onClick={() => {
-                        setState(true);
+                        handleShow();
                         setModalType('herramientas');
                     }}
                 >
@@ -61,7 +64,7 @@ export const SectionTwo = ({ setClaseMenu }) => {
                 <button 
                     className={ classBoxWhite }
                     onClick={() => {
-                        setState(true);
+                        handleShow();
                         setModalType('otros');
                     }}
                 >
@@ -69,8 +72,8 @@ export const SectionTwo = ({ setClaseMenu }) => {
                     <p className="fw-bold mt-2 fs-3">Otros</p>
                 </button>
                 <ModalSkills 
-                    state={ state } 
-                    change={ () => { setState(false) } } 
+                    show={ show } 
+                    onHide={ handleClose }
                     modalType={ modalType }
                 />
             </div>

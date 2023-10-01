@@ -1,34 +1,35 @@
 // con esta libreria creamos ventanas modales
-import { Modal } from "reactstrap";
+import Modal from 'react-bootstrap/Modal';
 import { ModalFront } from "./modals/ModalFront";
 import { ModalBack } from "./modals/ModalBack";
 import { ModalHerramientas } from "./modals/ModalHerramientas";
-import '../styles/skills.css';
 import { ModalOtros } from "./modals/ModalOtros";
+import '../styles/skills.css';
 
-export const ModalSkills = ({ state, change, modalType }) => {
+export const ModalSkills = ({ show, onHide, modalType }) => {
+
     if(modalType === 'front') {
         return (
-            <Modal size="lg" isOpen={ state } className='rounded-5 p-4'>
-                <ModalFront change={ change } />
+            <Modal show={ show } size="lg" className='rounded-5 p-4'>
+                <ModalFront onHide={ onHide } />
             </Modal>
         )
     } else if (modalType === 'back') {
         return (
-            <Modal size="lg" isOpen={ state } className='rounded-5 p-4'>
-                <ModalBack change={ change } />
+            <Modal show={ show } size="lg" className='rounded-5 p-4'>
+                <ModalBack onHide={ onHide } />
             </Modal>
         )
     } else if (modalType === 'herramientas') {
         return (
-            <Modal size="lg" isOpen={ state } className='rounded-5 p-4'>
-                <ModalHerramientas change={ change } />
+            <Modal show={ show } size="lg" className='rounded-5 p-4'>
+                <ModalHerramientas onHide={ onHide } />
             </Modal>
         )
     } else if (modalType === 'otros') {
         return (
-            <Modal size="lg" isOpen={ state } className='rounded-5 p-4'>
-                <ModalOtros change={ change } />
+            <Modal show={ show } size="lg" className='rounded-5 p-4'>
+                <ModalOtros onHide={ onHide } />
             </Modal>
         )
     }

@@ -2,7 +2,7 @@ import imgHtml from '../../assets/img/html-css-js-logo.webp';
 import imgReact from '../../assets/img/logoReact.svg';
 import imgElectron from '../../assets/img/Electron.png';
 
-export const ModalFront = ({ change }) => {
+export const ModalFront = ({ onHide }) => {
 
     return (
         <div className='modal__window text-center'>
@@ -33,7 +33,7 @@ export const ModalFront = ({ change }) => {
             </p>
             <button 
                 className="btn__cv fs-4 fw-bold rounded-5 m-auto mt-3 mb-4"
-                onClick={ change }
+                onClick={ onHide }
             >Cerrar</button>
         </div>
     )

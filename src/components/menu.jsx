@@ -1,48 +1,29 @@
 import '../styles/menu-fixed.css';
+import logo from '../assets/img/logoReact.svg';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
 
 export const Menu = ({ claseMenu }) => {
 
     return (
         <header>
-            <div className="menu-fixed pt-2 pb-2 text-center bg-white fs-4">
-                <nav className='w-75 m-auto'>
-                    <ul className='row w-75 m-auto'>
-                        <li className='col'>
-                            <a 
-                                className='text-decoration-none text-black' href="#one"
-                                id={ claseMenu === 'one' ? 'active' : '' }
-                            >HOME</a>
-                        </li>
-                        <li className='col'>
-                            <a 
-                                className='text-decoration-none text-black' 
-                                href="#habilidades"
-                                id={ claseMenu === 'two' ? 'active' : '' }
-                            >HABILIDADES</a>
-                        </li>
-                        <li className='col'>
-                            <a 
-                                className='text-decoration-none text-black' 
-                                href="#formacion"
-                                id={ claseMenu === 'three' ? 'active' : '' }
-                            >FORMACIÓN</a>
-                        </li>
-                        <li className='col'>
-                            <a 
-                                className='text-decoration-none text-black' href="#proyectos"
-                                id={ claseMenu === 'fourt' ? 'active' : '' }
-                            >PROYECTOS</a>
-                        </li>
-                        <li className='col'>
-                            <a 
-                                className='text-decoration-none text-black' 
-                                href="#contacto"
-                                id={ claseMenu === 'five' ? 'active' : '' }
-                            >CONTACTO</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <Navbar expand="lg" className="bg-body-tertiary menu-fixed p-0">
+                <Container>
+                    <img src={ logo } alt="Logo" width="40" height="40" className="d-inline-block align-text-top" />
+                    <Navbar.Brand className='fs-3 fw-bold'>Portafolio</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto fs-4">
+                            <Nav.Link id={ claseMenu === 'one' ? 'active' : '' } href="#one" >HOME</Nav.Link>
+                            <Nav.Link id={ claseMenu === 'two' ? 'active' : '' } href="#habilidades" >HABILIDADES</Nav.Link>
+                            <Nav.Link id={ claseMenu === 'three' ? 'active' : '' } href="#formacion" >FORMACIÓN</Nav.Link>
+                            <Nav.Link id={ claseMenu === 'fourt' ? 'active' : '' } href="#proyectos" >PROYECTOS</Nav.Link>
+                            <Nav.Link id={ claseMenu === 'five' ? 'active' : '' } href="#contacto" >CONTACTO</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </header>
     )
 };

@@ -2,7 +2,7 @@ import imgFigma from '../../assets/img/figmaLogo.png';
 import imgBootstrap from '../../assets/img/Bootstrap_logo.png';
 import imgSweet from '../../assets/img/SweetLogo.png';
 
-export const ModalOtros = ({ change }) => {
+export const ModalOtros = ({ onHide }) => {
     return (
         <div className='modal__window text-center p-4'>
             <h1 className="h1__skills fs-1">Otros</h1>
@@ -29,7 +29,7 @@ export const ModalOtros = ({ change }) => {
             </p>
             <button 
                 className="btn__cv fs-4 fw-bold rounded-5 m-auto mt-3 mb-4" 
-                onClick={ change }
+                onClick={ onHide }
             >Cerrar</button>
         </div>
     )

@@ -2,7 +2,7 @@ import imgVsCode from '../../assets/img/vscode.png';
 import imgGit from '../../assets/img/git+github.webp';
 import imgTerminal from '../../assets/img/terminal-icono.png';
 
-export const ModalHerramientas = ({ change }) => {
+export const ModalHerramientas = ({ onHide }) => {
     return (
         <div className='modal__window text-center p-4'>
             <h1 className="h1__skills fs-1">Herramientas</h1>
@@ -25,7 +25,7 @@ export const ModalHerramientas = ({ change }) => {
             </p>
             <button 
                 className="btn__cv fs-4 fw-bold rounded-5 m-auto mt-3 mb-4" 
-                onClick={ change }
+                onClick={ onHide }
             >Cerrar</button>
         </div>
     )
