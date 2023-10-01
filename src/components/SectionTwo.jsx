@@ -24,13 +24,14 @@ export const SectionTwo = ({ setClaseMenu }) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const classBoxWhite = 'square__white border rounded-4 pt-4 ps-5 pe-5';
+    const vpwidth = window.innerWidth > 768;
+    const classBoxWhite = vpwidth ? 'square__white border rounded-4 pt-4 ps-5 pe-5' : 'square__white border rounded-4 pt-4 ps-5 pe-5 w-50 m-auto mt-4';
 
     return (
         <section className="text-center pt-4" ref={ refSection }>
             <hr id="habilidades" />
             <h2 className='fs-1'>Mis habilidades</h2>
-            <div className="d-flex justify-content-evenly mt-5 mb-5">
+            <div className={ vpwidth ? "d-flex justify-content-evenly mt-5 mb-5" : 'd-flex flex-column'} >
                 <button 
                     className={ classBoxWhite }
                     onClick={() => {

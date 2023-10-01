@@ -16,13 +16,15 @@ export const SectionFourt = ({ setClaseMenu }) => {
         })
     })
 
-    const classBoxWhite = 'square__white border rounded-4 pt-4 ps-5 pe-5';
+    const vpwidth = window.innerWidth > 768;
+    // 'd-flex flex-column'
+    const classBoxWhite = `square__white border rounded-4 pt-4 ps-5 pe-5 ${ !vpwidth && 'm-auto w-50 mt-3' }`;
 
     return (
         <section className="text-center pt-4 pb-5" id='fourt' ref={ refSection }>
             <hr id="proyectos" />
             <h4 className='fs-1'>Mis Proyectos</h4>
-            <div className="d-flex justify-content-evenly mt-5">
+            <div className={ vpwidth ? "d-flex justify-content-evenly mt-5" : 'd-flex flex-column'}>
                 <button className={ classBoxWhite }>
                     <a className='text-decoration-none text-dark' href="https://k3yr0nym0us.github.io/portfolio/" target="_blank" rel="noreferrer">
                         <img className="img__portfolio" src={ portfolio } alt="imagen-portafolio" />

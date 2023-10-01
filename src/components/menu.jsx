@@ -11,7 +11,7 @@ export const Menu = ({ claseMenu }) => {
             <Navbar expand="lg" className="bg-body-tertiary menu-fixed p-0">
                 <Container>
                     <img src={ logo } alt="Logo" width="40" height="40" className="d-inline-block align-text-top" />
-                    <Navbar.Brand className='fs-3 fw-bold'>Portafolio</Navbar.Brand>
+                    <Navbar.Brand className='fs-3 fw-bold me-5'>Portafolio</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto fs-4">
