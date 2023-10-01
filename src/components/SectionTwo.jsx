@@ -25,7 +25,7 @@ export const SectionTwo = ({ setClaseMenu }) => {
     const handleShow = () => setShow(true);
 
     const vpwidth = window.innerWidth > 768;
-    const classBoxWhite = vpwidth ? 'square__white border rounded-4 pt-4 ps-5 pe-5' : 'square__white border rounded-4 pt-4 ps-5 pe-5 w-50 m-auto mt-4';
+    const classBoxWhite = vpwidth ? 'square__white border rounded-4 pt-4 ps-5 pe-5' : 'square__white border rounded-4 pt-4 ps-5 pe-5 w-75 m-auto mt-4';
 
     return (
         <section className="text-center pt-4" ref={ refSection }>
@@ -39,7 +39,7 @@ export const SectionTwo = ({ setClaseMenu }) => {
                         setModalType('front');
                     }}
                 >
-                    <img className="img__square" src={ logoFront } alt="HTML CSS JavasScript" />
+                    <img className={ vpwidth ? "img__square" : 'w-50'} src={ logoFront } alt="HTML CSS JavasScript" />
                     <p className="fw-bold mt-2 fs-3">Front-End</p>
                 </button>
                 <button 
@@ -49,7 +49,7 @@ export const SectionTwo = ({ setClaseMenu }) => {
                         setModalType('back');
                     }}
                 >
-                    <img className="img__square" src={ nodeExpresSql } alt="NodeJS MySql" />
+                    <img className={ vpwidth ? "img__square" : 'w-50'} src={ nodeExpresSql } alt="NodeJS MySql" />
                     <p className="fw-bold mt-2 fs-3">Back-End</p>
                 </button>
                 <button 
@@ -59,7 +59,7 @@ export const SectionTwo = ({ setClaseMenu }) => {
                         setModalType('herramientas');
                     }}
                 >
-                    <img className="img__square" src={ herramientas } alt="Git Github Consola VSCode" />
+                    <img className={ vpwidth ? "img__square" : 'w-50'} src={ herramientas } alt="Git Github Consola VSCode" />
                     <p className="fw-bold mt-2 fs-3">Herramientas</p>
                 </button>
                 <button 
@@ -69,7 +69,7 @@ export const SectionTwo = ({ setClaseMenu }) => {
                         setModalType('otros');
                     }}
                 >
-                    <img className="img__square" src={ logoOtros } alt="Otros" />
+                    <img className={ vpwidth ? "img__square" : 'w-50'} src={ logoOtros } alt="Otros" />
                     <p className="fw-bold mt-2 fs-3">Otros</p>
                 </button>
                 <ModalSkills 
