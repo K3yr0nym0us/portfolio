@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
-import { Menu, SectionOne, SectionTwo, SectionThree, SectionFourt, SectionFive } from "./";
+import { Menu } from "./Menu";
+import { SectionOne } from "./SectionOne";
+import { SectionTwo } from "./SectionTwo";
+import { SectionThree } from "./SectionThree";
+import { SectionFourt } from "./SectionFourt";
+import { SectionFive } from "./SectionFive";
 
 const App = () => {
 
