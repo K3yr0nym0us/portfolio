@@ -14,15 +14,14 @@ export const SectionThree = ({ setClaseMenu }) => {
                 setClaseMenu('three');
             }
         })
-    });
+    }, []);
 
     const imgsRef = useRef();
 
     const [ visibility, setVisibility ] = useState('imgs__formacion--hidden');
 
     window.addEventListener('scroll', () => {
-        const position = imgsRef.current.getBoundingClientRect();
-        if (position.top <= 500 && position.top >= -50) {
+        if (refSection.current?.getBoundingClientRect().top <= 500 && refSection.current?.getBoundingClientRect()?.top >= -50) {
             setVisibility('imgs__formacion');
         } else {
             setVisibility('imgs__formacion--hidden');

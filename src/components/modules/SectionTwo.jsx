@@ -16,7 +16,7 @@ export const SectionTwo = ({ setClaseMenu }) => {
                 setClaseMenu('two');
             }
         })
-    })
+    }, [])
 
     const [ modalType, setModalType ] = useState('');
     const [show, setShow] = useState(false);

@@ -14,7 +14,7 @@ export const SectionOne = ({ setClaseMenu }) => {
                 setClaseMenu('one');
             }
         })
-    })
+    }, [])
 
     const vpwidth = window.innerWidth > 768;
 

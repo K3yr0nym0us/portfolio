@@ -16,7 +16,7 @@ export const SectionFive = ({ setClaseMenu }) => {
                 setClaseMenu('five');
             }
         })
-    })
+    }, [])
 
     const handleClick = () => {
         navigator.clipboard.writeText('kevinmartinezbarra@gmail.com');
@@ -42,7 +42,7 @@ export const SectionFive = ({ setClaseMenu }) => {
                     <p className='fs-4 fw-bold mt-2'>LinkedIn</p>
                 </a>
                 <div className='text-decoration-none text-dark bg-white'>
-                    <img className='img__contact' src={ gmail } onClick={ handleClick } alt="gmail" />
+                    <img className='img__contact' style={{ cursor: 'pointer' }} src={ gmail } onClick={ handleClick } alt="gmail" />
                     <p className='fs-4 fw-bold mt-2'>Gmail</p>
                 </div>
                 <a className='text-decoration-none text-dark' href="https://api.whatsapp.com/send?phone=56958407177" target='_blank' rel="noreferrer">
