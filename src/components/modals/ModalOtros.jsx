@@ -24,11 +24,11 @@ export const ModalOtros = ({ onHide }) => {
             <p className="fs-5">
                 Mi libreria favorita de creación de ventanas<br />
                 emergentes, de notificación o modales.<br />
-                La he usado en todos mis proyectos ya que es muy comoda<br />
-                permite crear formulario con buen diseño y es hermosa a la vista.
+                La he usado en todos mis proyectos ya que es muy comoda.<br />
+                Permite crear formularios con exelente diseño y es muy hermosa a la vista.
             </p>
             <button 
-                className="btn__cv fs-4 fw-bold rounded-5 m-auto mt-3 mb-4" 
+                className="btn__cv rounded-5 border text-secondary fs-5 mt-4 fw-bold bg-white p-2 pe-3 ps-3" 
                 onClick={ onHide }
             >Cerrar</button>
         </div>

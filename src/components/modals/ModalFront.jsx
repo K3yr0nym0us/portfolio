@@ -5,7 +5,7 @@ import imgElectron from '../../assets/img/Electron.png';
 export const ModalFront = ({ onHide }) => {
 
     return (
-        <div className='modal__window text-center'>
+        <div className='modal__window text-center pb-4'>
             <h1 className="h1__skills fs-1 mt-4">Front-End</h1>
             <p className="fs-5 mt-3">Mis habilidades como desarrollador Front-End se especializan en:</p>
             <img className="w-25 m-auto" src={ imgHtml } alt="HTML" />
@@ -32,7 +32,7 @@ export const ModalFront = ({ onHide }) => {
                 a archivos y ventanas de aplicación.
             </p>
             <button 
-                className="btn__cv fs-4 fw-bold rounded-5 m-auto mt-3 mb-4"
+                className="btn__cv rounded-5 border text-secondary fs-5 mt-4 fw-bold bg-white p-2 pe-3 ps-3"
                 onClick={ onHide }
             >Cerrar</button>
         </div>

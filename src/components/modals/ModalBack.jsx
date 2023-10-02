@@ -25,7 +25,7 @@ export const ModalBack = ({ onHide }) => {
                 INSERT, REPLACE, UPDATE, DELETE, WHERE.<br />
             </p>
             <button 
-                className="btn__cv fs-4 fw-bold rounded-5 m-auto mt-3 mb-4" 
+                className="btn__cv rounded-5 border text-secondary fs-5 mt-4 fw-bold bg-white p-2 pe-3 ps-3" 
                 onClick={ onHide }
             >Cerrar</button>
         </div>
