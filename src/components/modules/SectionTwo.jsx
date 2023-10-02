@@ -1,6 +1,6 @@
 import '../../styles/section-two.css';
 import logoFront from '../../assets/img/front.png';
-import nodeExpresSql from '../../assets/img/nodeExpressSql.png';
+import LogoBack from '../../assets/img/LogoBack.svg';
 import herramientas from '../../assets/img/herramientas.webp';
 import logoOtros from '../../assets/img/LogoOtros.svg';
 import { ModalSkills } from './ModalSkills';
@@ -49,7 +49,7 @@ export const SectionTwo = ({ setClaseMenu }) => {
                         setModalType('back');
                     }}
                 >
-                    <img className={ vpwidth ? "img__square" : 'w-50'} src={ nodeExpresSql } alt="NodeJS MySql" />
+                    <img className={ vpwidth ? "img__square" : 'w-50'} src={ LogoBack } alt="NodeJS MySql" />
                     <p className="fw-bold mt-2 fs-3">Back-End</p>
                 </button>
                 <button 

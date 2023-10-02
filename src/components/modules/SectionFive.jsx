@@ -1,8 +1,8 @@
 import '../../styles/section-five.css';
-import gitHub from '../../assets/img/github.webp';
-import linkedin from '../../assets/img/linkedin.webp';
-import gmail from '../../assets/img/gmail.png';
-import whatsapp from '../../assets/img/WhatsApp_icon.webp';
+import gitHub from '../../assets/img/github.svg';
+import linkedin from '../../assets/img/linkedin.svg';
+import gmail from '../../assets/img/gmail.svg';
+import whatsapp from '../../assets/img/WhatsApp_icon.svg';
 import { useEffect, useRef } from 'react';
 import Swal from 'sweetalert2';
 

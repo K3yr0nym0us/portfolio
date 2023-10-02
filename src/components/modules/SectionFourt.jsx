@@ -1,5 +1,5 @@
 import '../../styles/section-fourt.css';
-import portfolio from '../../assets/img/portafolio.webp';
+import portfolio from '../../assets/img/portafolio.svg';
 import minventario from '../../assets/img/Screenshot 2023-09-26 163300.png';
 import gitHubCodes from '../../assets/img/github-codes.webp';
 import { useEffect, useRef } from 'react';
@@ -39,7 +39,7 @@ export const SectionFourt = ({ setClaseMenu }) => {
                 <button className={ classBoxWhite }>
                     <a className='text-decoration-none text-dark' href="https://github.com/K3yr0nym0us/Administrador-de-tareas-pendientes" target="_blank" rel="noreferrer">
                         <img className={ vpwidth ? 'img__admin' : 'w-50'} src={ gitHubCodes } alt="imagen-github" />
-                        <p className="fs-4 fw-bold mt-4">Próximamente</p>
+                        <p className="fs-4 fw-bold mt-4">Más en GitHub</p>
                     </a>
                 </button>
             </div>
