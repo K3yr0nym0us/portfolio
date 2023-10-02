@@ -1,5 +1,5 @@
 import imgHtml from '../../assets/img/html-css-js-logo.webp';
-import imgReact from '../../assets/img/logoReact.svg';
+import imgReact from '../../assets/img/React-icon.svg';
 import imgElectron from '../../assets/img/Electron.png';
 
 export const ModalFront = ({ onHide }) => {
