@@ -26,7 +26,7 @@ export const SectionOne = ({ setClaseMenu }) => {
                     <p className="name fs-2">Mi nombre es Kevin Martinez.</p>
                     <small className={ vpwidth ? "dev d-flex fs-4" : "dev d-flex fs-4 justify-content-center" }>
                         Soy Full-Stack Web Developer
-                        <img className='img__react' src={ imgReact } alt="ReactJS" />
+                        <img className='img__react p-1' src={ imgReact } alt="ReactJS" />
                     </small>
                     <a href={ cv } target='_blank' rel="noreferrer">
                         <button className="btn__cv rounded-5 border text-secondary fs-5 mt-4 fw-bold bg-white p-2 pe-3 ps-3"
