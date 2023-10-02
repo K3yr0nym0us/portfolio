@@ -1,9 +1,9 @@
-import '../styles/section-two.css';
-import logoFront from '../assets/img/front.png';
-import nodeExpresSql from '../assets/img/nodeExpressSql.png';
-import herramientas from '../assets/img/herramientas.webp';
-import logoOtros from '../assets/img/LogoOtros.svg';
-import { ModalSkills } from './modalSkills';
+import '../../styles/section-two.css';
+import logoFront from '../../assets/img/front.png';
+import nodeExpresSql from '../../assets/img/nodeExpressSql.png';
+import herramientas from '../../assets/img/herramientas.webp';
+import logoOtros from '../../assets/img/LogoOtros.svg';
+import { ModalSkills } from './ModalSkills';
 import { useEffect, useRef, useState } from "react";
 
 export const SectionTwo = ({ setClaseMenu }) => {

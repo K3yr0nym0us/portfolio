@@ -1,7 +1,7 @@
-import imgCiisa from '../assets/img/ciisa.webp'
-import imgOne from '../assets/img/One.png'
-import aluraOracle from '../assets/img/aluraoracle.webp'
-import '../styles/section-three.css'
+import imgCiisa from '../../assets/img/ciisa.webp'
+import imgOne from '../../assets/img/One.png'
+import aluraOracle from '../../assets/img/aluraoracle.webp'
+import '../../styles/section-three.css'
 import { useEffect, useRef, useState } from 'react'
 
 export const SectionThree = ({ setClaseMenu }) => {

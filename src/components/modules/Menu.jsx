@@ -1,5 +1,5 @@
-import '../styles/menu-fixed.css';
-import logo from '../assets/img/logoReact.svg';
+import '../../styles/menu-fixed.css';
+import logo from '../../assets/img/logoReact.svg';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';

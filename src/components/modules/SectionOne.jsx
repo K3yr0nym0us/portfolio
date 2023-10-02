@@ -1,7 +1,7 @@
-import '../styles/section-one.css'
-import caricatura from '../assets/img/caricatura.webp'
-import cv from '../assets/pdf/Curriculum Dev.pdf'
-import imgReact from '../assets/img/logoReact.svg'
+import '../../styles/section-one.css'
+import caricatura from '../../assets/img/caricatura.webp'
+import cv from '../../assets/pdf/Curriculum Dev.pdf'
+import imgReact from '../../assets/img/logoReact.svg'
 import { useEffect, useRef } from 'react'
 
 export const SectionOne = ({ setClaseMenu }) => {

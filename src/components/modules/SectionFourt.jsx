@@ -1,7 +1,7 @@
-import '../styles/section-fourt.css';
-import portfolio from '../assets/img/portafolio.webp';
-import minventario from '../assets/img/Screenshot 2023-09-26 163300.png';
-import gitHubCodes from '../assets/img/github-codes.webp';
+import '../../styles/section-fourt.css';
+import portfolio from '../../assets/img/portafolio.webp';
+import minventario from '../../assets/img/Screenshot 2023-09-26 163300.png';
+import gitHubCodes from '../../assets/img/github-codes.webp';
 import { useEffect, useRef } from 'react';
 
 export const SectionFourt = ({ setClaseMenu }) => {

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Menu } from "./Menu";
-import { SectionOne } from "./SectionOne";
-import { SectionTwo } from "./SectionTwo";
-import { SectionThree } from "./SectionThree";
-import { SectionFourt } from "./SectionFourt";
-import { SectionFive } from "./SectionFive";
+import { Menu } from "./modules/Menu";
+import { SectionOne } from "./modules/SectionOne";
+import { SectionTwo } from "./modules/SectionTwo";
+import { SectionThree } from "./modules/SectionThree";
+import { SectionFourt } from "./modules/SectionFourt";
+import { SectionFive } from "./modules/SectionFive";
 
 export const App = () => {
 
