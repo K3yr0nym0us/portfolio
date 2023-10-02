@@ -22,7 +22,7 @@ export const SectionFourt = ({ setClaseMenu }) => {
     return (
         <section className="text-center pt-4 pb-5" id='fourt' ref={ refSection }>
             <hr id="proyectos" />
-            <h4 className='fs-1'>Mis Proyectos</h4>
+            <h4 className='fs-1 mt-5'>Mis Proyectos</h4>
             <div className={ vpwidth ? "d-flex justify-content-evenly mt-5" : 'd-flex flex-column' }>
                 <button className={ classBoxWhite }>
                     <a className='text-decoration-none text-dark' href="https://k3yr0nym0us.github.io/portfolio/" target="_blank" rel="noreferrer">

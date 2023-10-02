@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Menu, SectionOne, SectionTwo, SectionThree, SectionFourt, SectionFive } from ".";
+import { Menu, SectionOne, SectionTwo, SectionThree, SectionFourt, SectionFive } from "./";
 
-export const App = () => {
-    
+const App = () => {
+
     useEffect(() => {
         document.title = 'Portafolio - Kevin Martinez';
     });
@@ -20,3 +20,5 @@ export const App = () => {
         </>
     )
 }
+
+export default App;

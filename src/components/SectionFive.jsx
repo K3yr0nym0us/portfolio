@@ -29,9 +29,9 @@ export const SectionFive = ({ setClaseMenu }) => {
     }
 
     return (
-        <section className="pt-4 pb-4 text-center" id='five' ref={ refSection }>
+        <section className="pt-4 pb-5 text-center" id='five' ref={ refSection }>
             <hr id="contacto" />
-            <h5 className='fs-1 mt-2'>Contacto</h5>
+            <h5 className='fs-1 mt-5'>Contacto</h5>
             <div className="mt-5 d-flex justify-content-evenly">
                 <a className='text-decoration-none text-dark' href="https://github.com/K3yr0nym0us" target="_blank" rel="noreferrer">
                     <img className='img__contact' src={ gitHub } alt="github" />

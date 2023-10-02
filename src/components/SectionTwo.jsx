@@ -28,9 +28,9 @@ export const SectionTwo = ({ setClaseMenu }) => {
     const classBoxWhite = vpwidth ? 'square__white border rounded-4 pt-4 ps-5 pe-5' : 'square__white border rounded-4 pt-4 ps-5 pe-5 w-75 m-auto mt-4';
 
     return (
-        <section className="text-center pt-4" ref={ refSection }>
+        <section className="text-center" ref={ refSection }>
             <hr id="habilidades" />
-            <h2 className='fs-1'>Mis habilidades</h2>
+            <h2 className='fs-1 mt-5'>Mis habilidades</h2>
             <div className={ vpwidth ? "d-flex justify-content-evenly mt-5 mb-5" : 'd-flex flex-column'} >
                 <button 
                     className={ classBoxWhite }

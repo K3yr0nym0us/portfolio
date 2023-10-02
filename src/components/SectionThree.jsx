@@ -34,7 +34,7 @@ export const SectionThree = ({ setClaseMenu }) => {
     return (
         <section className="text-center pt-4 pb-4" id='three' ref={ refSection }>
             <hr id="formacion" />
-            <h3 className='fs-1 mt-2'>Mi Formación</h3>
+            <h3 className='fs-1 mt-5'>Mi Formación</h3>
             <div className={ vpwidth ? `d-flex justify-content-evenly ${ visibility } mt-5` : `d-flex flex-column ${ visibility }` } ref={ imgsRef }>
                 <img className={ vpwidth ? "w-25" : 'm-auto mt-3 w-75'} src={ imgCiisa } alt="Ciisa Instituto de ciencias tecnologicas" />
                 <img className={ vpwidth ? "w-25" : 'm-auto mt-3 w-75'} src={ imgOne } alt="Oracle Next Educations" />
