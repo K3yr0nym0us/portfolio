@@ -6,7 +6,7 @@ import { SectionThree } from "./SectionThree";
 import { SectionFourt } from "./SectionFourt";
 import { SectionFive } from "./SectionFive";
 
-const App = () => {
+export const App = () => {
 
     useEffect(() => {
         document.title = 'Portafolio - Kevin Martinez';
@@ -25,5 +25,3 @@ const App = () => {
         </>
     )
 }
-
-export default App;
