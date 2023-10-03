@@ -8,29 +8,30 @@ import '../../styles/skills.css';
 
 export const ModalSkills = ({ show, onHide, modalType }) => {
 
-    if(modalType === 'front') {
-        return (
-            <Modal show={ show } size="lg" className='rounded-5 p-4'>
-                <ModalFront onHide={ onHide } />
-            </Modal>
-        )
-    } else if (modalType === 'back') {
-        return (
-            <Modal show={ show } size="lg" className='rounded-5 p-4'>
-                <ModalBack onHide={ onHide } />
-            </Modal>
-        )
-    } else if (modalType === 'herramientas') {
-        return (
-            <Modal show={ show } size="lg" className='rounded-5 p-4'>
-                <ModalHerramientas onHide={ onHide } />
-            </Modal>
-        )
-    } else if (modalType === 'otros') {
-        return (
-            <Modal show={ show } size="lg" className='rounded-5 p-4'>
-                <ModalOtros onHide={ onHide } />
-            </Modal>
-        )
+    switch (modalType) {
+        case 'front':
+            return (
+                <Modal show={ show } size="lg" className='rounded-5 p-4'>
+                    <ModalFront onHide={ onHide } />
+                </Modal>
+            )
+        case 'back':
+            return (
+                <Modal show={ show } size="lg" className='rounded-5 p-4'>
+                    <ModalBack onHide={ onHide } />
+                </Modal>
+            )
+        case 'herramientas':
+            return (
+                <Modal show={ show } size="lg" className='rounded-5 p-4'>
+                    <ModalHerramientas onHide={ onHide } />
+                </Modal>
+            )
+        case 'otros':
+            return (
+                <Modal show={ show } size="lg" className='rounded-5 p-4'>
+                    <ModalOtros onHide={ onHide } />
+                </Modal>
+            )
     }
 }
