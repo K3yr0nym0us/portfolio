@@ -1,6 +1,6 @@
 import '../../styles/section-fourt.css';
 import portfolio from '../../assets/img/portafolio.svg';
-import minventario from '../../assets/img/Screenshot 2023-09-26 163300.png';
+import img_kypsystems from '../../assets/img/Logo3.png';
 import gitHubCodes from '../../assets/img/github-codes.webp';
 import { useEffect, useRef } from 'react';
 
@@ -31,9 +31,9 @@ export const SectionFourt = ({ setClaseMenu }) => {
                     </a>
                 </button>
                 <button className={ classBoxWhite }>
-                    <a className='text-decoration-none text-dark' href="https://minventario.cl/" target="_blank" rel="noreferrer">
-                        <img className={ vpwidth ? 'img__square' : 'w-75' } src={ minventario } alt="" />
-                        <p className="fs-4 fw-bold mt-2">Minventario.cl<br />(Sitio Web)</p>
+                    <a className='text-decoration-none text-dark' href="https://kypsystems.cl/" target="_blank" rel="noreferrer">
+                        <img className={ vpwidth ? 'img__kypsystems' : 'w-75' } src={ img_kypsystems } alt="img_kypsystems" />
+                        <p className="fs-4 fw-bold mt-2">kypsystems.cl<br />(Sitio Web)</p>
                     </a>
                 </button>
                 <button className={ classBoxWhite }>
