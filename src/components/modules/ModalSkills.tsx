@@ -1,12 +1,21 @@
-// con esta libreria creamos ventanas modales
 import Modal from 'react-bootstrap/Modal';
-import { ModalFront } from "../modals/ModalFront";
-import { ModalBack } from "../modals/ModalBack";
-import { ModalHerramientas } from "../modals/ModalHerramientas";
-import { ModalOtros } from "../modals/ModalOtros";
+
+import {
+    ModalBack,
+    ModalFront,
+    ModalHerramientas,
+    ModalOtros
+} from '../modals';
+
 import '../../styles/skills.css';
 
-export const ModalSkills = ({ show, onHide, modalType }) => {
+type Props = {
+    show: boolean;
+    onHide: () => void;
+    modalType: string;
+}
+
+export const ModalSkills = ({ show, onHide, modalType }: Props) => {
 
     switch (modalType) {
         case 'front':

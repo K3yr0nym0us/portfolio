@@ -2,7 +2,11 @@ import imgHtml from '../../assets/img/html-css-js-logo.webp';
 import imgReact from '../../assets/img/React-icon.svg';
 import imgElectron from '../../assets/img/Electron.png';
 
-export const ModalFront = ({ onHide }) => {
+type Props = {
+    onHide: () => void;
+}
+
+export const ModalFront = ({ onHide }: Props) => {
 
     return (
         <div className='modal__window text-center pb-4'>

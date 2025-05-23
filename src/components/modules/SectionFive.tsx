@@ -1,22 +1,31 @@
-import '../../styles/section-five.css';
+import { useEffect, useRef } from 'react';
+import Swal from 'sweetalert2';
+
 import gitHub from '../../assets/img/github.svg';
 import linkedin from '../../assets/img/linkedin.svg';
 import gmail from '../../assets/img/gmail.svg';
 import whatsapp from '../../assets/img/WhatsApp_icon.svg';
-import { useEffect, useRef } from 'react';
-import Swal from 'sweetalert2';
 
-export const SectionFive = ({ setClaseMenu }) => {
+import '../../styles/section-five.css';
 
-    const refSection = useRef();
+import { ClassMenu } from '../App';
+
+type Props = {
+    setClaseMenu: (claseMenu: ClassMenu) => void;
+}
+
+export const SectionFive = ({ setClaseMenu }: Props) => {
+
+    const refSection = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
+            if(refSection.current)
             if(refSection.current.getBoundingClientRect().top > 0 && refSection.current.getBoundingClientRect().top < 60) {
                 setClaseMenu('five');
             }
         })
-    }, [])
+    }, [setClaseMenu])
 
     const handleClick = () => {
         navigator.clipboard.writeText('kevinmartinezbarra@gmail.com');

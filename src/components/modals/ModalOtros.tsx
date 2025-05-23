@@ -2,7 +2,11 @@ import imgFigma from '../../assets/img/figmaLogo.png';
 import imgBootstrap from '../../assets/img/Bootstrap_logo.png';
 import imgSweet from '../../assets/img/SweetLogo.png';
 
-export const ModalOtros = ({ onHide }) => {
+type Props = {
+    onHide: () => void;
+}
+
+export const ModalOtros = ({ onHide }: Props) => {
     return (
         <div className='modal__window text-center p-4'>
             <h1 className="h1__skills fs-1">Otros</h1>

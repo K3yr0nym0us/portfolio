@@ -2,7 +2,11 @@ import imgVsCode from '../../assets/img/vscode.png';
 import imgGit from '../../assets/img/git+github.webp';
 import imgTerminal from '../../assets/img/terminal-icono.png';
 
-export const ModalHerramientas = ({ onHide }) => {
+type Props = {
+    onHide: () => void;
+}
+
+export const ModalHerramientas = ({ onHide }: Props) => {
     return (
         <div className='modal__window text-center p-4'>
             <h1 className="h1__skills fs-1">Herramientas</h1>

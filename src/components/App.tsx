@@ -1,18 +1,22 @@
 import { useEffect, useState } from "react";
-import { Menu } from "./modules/Menu";
-import { SectionOne } from "./modules/SectionOne";
-import { SectionTwo } from "./modules/SectionTwo";
-import { SectionThree } from "./modules/SectionThree";
-import { SectionFourt } from "./modules/SectionFourt";
-import { SectionFive } from "./modules/SectionFive";
+
+import {
+    Menu,
+    SectionOne,
+    SectionTwo,
+    SectionThree,
+    SectionFourt,
+    SectionFive
+} from './modules';
+
+export type ClassMenu = 'one' | 'two' | 'three' | 'fourt' | 'five';
 
 export const App = () => {
+    const [claseMenu, setClaseMenu] = useState<ClassMenu>('one');
 
     useEffect(() => {
         document.title = 'Portafolio - Kevin Martinez';
     });
-
-    const [ claseMenu, setClaseMenu ] = useState('one');
 
     return (
         <>

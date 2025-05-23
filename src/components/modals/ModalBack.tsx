@@ -1,7 +1,11 @@
 import imgNode from '../../assets/img/NodeJS.png';
 import imgSql from '../../assets/img/SQL.png';
 
-export const ModalBack = ({ onHide }) => {
+type Props = {
+    onHide: () => void;
+}
+
+export const ModalBack = ({ onHide }: Props) => {
     return (
         <div className='modal__window text-center p-4'>
             <h1 className="h1__skills fs-1">Back-End</h1>

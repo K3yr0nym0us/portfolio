@@ -1,31 +1,41 @@
-import '../../styles/section-two.css';
+import { useEffect, useRef, useState } from "react";
+
 import logoFront from '../../assets/img/front.png';
 import LogoBack from '../../assets/img/LogoBack.svg';
 import herramientas from '../../assets/img/herramientas.webp';
 import logoOtros from '../../assets/img/LogoOtros.svg';
+
 import { ModalSkills } from './ModalSkills';
-import { useEffect, useRef, useState } from "react";
 
-export const SectionTwo = ({ setClaseMenu }) => {
+import '../../styles/section-two.css';
 
-    const refSection = useRef();
+import { ClassMenu } from "../App";
 
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            if(refSection.current.getBoundingClientRect().top > 0 && refSection.current.getBoundingClientRect().top < 60) {
-                setClaseMenu('two');
-            }
-        })
-    }, [])
+type Props = {
+    setClaseMenu: (claseMenu: ClassMenu) => void;
+}
 
+export const SectionTwo = ({ setClaseMenu }: Props) => {
     const [ modalType, setModalType ] = useState('');
     const [show, setShow] = useState(false);
-    
+
+    const refSection = useRef<HTMLDivElement>(null);
+
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     const vpwidth = window.innerWidth > 768;
     const classBoxWhite = vpwidth ? 'square__white border rounded-4 pt-4 ps-5 pe-5' : 'square__white border rounded-4 pt-4 ps-5 pe-5 w-75 m-auto mt-4';
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if(refSection.current) {
+                if(refSection.current.getBoundingClientRect().top > 0 && refSection.current.getBoundingClientRect().top < 60) {
+                    setClaseMenu('two');
+                }
+            }
+        })
+    }, [])
 
     return (
         <section className="text-center" ref={ refSection }>
