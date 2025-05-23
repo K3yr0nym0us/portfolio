@@ -33,8 +33,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-          cache: 'npm'
+          node-version: 22.16.0
       - name: Install dependencies
         run: yarn install
       - name: Build
